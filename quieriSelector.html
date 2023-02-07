@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Estes es un título</h1>
+  <p>Este es un parrafo sin clase</p>
+  <p>Este es un otro parrafo sin clase</p>
+  <p class="parrafo">Este es un parrafo con clase</p>
+  <p id="identificador">Estes es un parrafo con ID</p>
+  <input placeholder="Hola Pollos">
+</body>
+<script>
+  const h1 = document.querySelector("h1");
+  console.log(h1);
+  const p = document.querySelectorAll("p");
+  console.log(p);
+  const parrafo = document.querySelector(".parrafo");
+  console.log(parrafo);
+  const identificador = document.querySelector("#identificador");
+  console.log(identificador);
+  const input = document.querySelector("input");
+  console.log(input);
+  console.log({
+    h1,
+    p,
+    parrafo,
+    identificador,
+    input
+  });
+  // El único elemento que puede tener un ID es:
+  const identificadorgebi = document.getElementById("identificador");
+  console.log(identificadorgebi);
+  h1.innerHTML = "Hola Mundo <br> Soy un título";
+  h1.style.color = "red";
+  // h1.innerText = "Hola Mundo <br> Soy un título";
+</script>
+</html>

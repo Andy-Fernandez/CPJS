@@ -1,0 +1,135 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 62.5%;
+  font-family: 'SF Pro Text';
+}
+:root{
+  --off-white: #F4F4F4;
+  --blue: #0C101E;
+  --secondary-white: #ECECEC;
+  --font-size: 3.6rem;
+  --title-font-size: 8rem;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.calculator{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 926px;
+  width: 430px;
+  margin: 0 auto;
+  background-color: var(--off-white);
+  border-radius: 40px;
+}
+.screen{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 90%;
+  height: 320px;
+}
+.screen .operation{
+  font-size: var(--font-size);
+  font-weight: 500;
+  color: var(--blue);
+  margin-bottom: 20px;
+}
+.screen .result{
+  font-size: var(--title-font-size);
+  font-weight: 500;
+  color: var(--blue);
+  margin-bottom: 20px;
+}
+
+.buttons{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 18px;
+  margin-bottom: 50px;
+}
+.button{
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  font-size: var(--font-size);
+  font-weight: 500;
+  height: 79px;
+  width: 79px;
+  color: var(--blue);
+  background-color: var(--off-white);
+  border: none;
+  border-radius: 50%;
+  background: #F4F4F4;
+  box-shadow:  10px 10px 20px #cfcfcf,
+              -10px -10px 20px #ffffff;
+}
+
+/* make an animation when active: */
+.button:active{
+  transform: scale(0.95);
+}
+
+.zero{
+  text-align: start;
+  grid-column: 1 / 3;
+  width: 175px;
+  border-radius: 50px;
+  padding-left: 28px;
+}
+.symbol{
+  background-color: var(--secondary-white);
+}
+.equal{
+  display: inline-block;
+  background-image: url(./asets/equal-black.svg);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: 30px;
+}
+.plus{
+  background-image: url(./asets/plus-black.svg);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: 30px;
+}
+.minus{
+  background-image: url(./asets/minus-black.svg);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: 30px;
+}
+.multiply{
+  background-image: url(./asets/multiply-black.svg);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: 50px;
+}
+.divide{
+  background-image: url(./asets/divide-black.svg);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: 50px;
+}
+.plus-minus{
+  background-image: url(./asets/plus-slash-minus-black.svg);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: 50px;
+}
+.percent{
+  background-image: url(./asets/percent-black.svg);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: 50px;
+}
