@@ -10,6 +10,7 @@ html{
 :root{
   --off-white: #F4F4F4;
   --blue: #0C101E;
+  --blue-light: #0c101e83;
   --secondary-white: #ECECEC;
   --font-size: 3.6rem;
   --title-font-size: 8rem;
@@ -24,7 +25,7 @@ html{
 .calculator{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   height: 100%;
   max-height: 850px;
@@ -46,12 +47,12 @@ html{
   font-size: var(--font-size);
   font-weight: 500;
   color: var(--blue);
+  color: var(--blue-light);
   margin-bottom: 20px;
 }
 .screen .result{
   font-size: var(--title-font-size);
   font-weight: 500;
-  color: var(--blue);
   margin-bottom: 20px;
 }
 
