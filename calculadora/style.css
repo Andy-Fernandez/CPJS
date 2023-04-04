@@ -21,6 +21,7 @@ html{
   align-items: center;
   height: 100vh;
   overflow: hidden;
+  background-color: var(--off-white);
 }
 .calculator{
   display: flex;
@@ -34,6 +35,8 @@ html{
   background-color: var(--off-white);
   padding-bottom: 40px;
   border-radius: 40px;
+  box-shadow:  10px 10px 20px #cfcfcf,
+              -10px -10px 20px #ffffff;
 }
 .screen{
   display: flex;
