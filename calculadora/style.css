@@ -46,14 +46,14 @@ html{
   width: 90%;
   min-height: 240px;
 }
-.screen .operation{
+.screen .lastOperation{
   font-size: var(--font-size);
   font-weight: 500;
   color: var(--blue);
   color: var(--blue-light);
   margin-bottom: 20px;
 }
-.screen .result{
+.screen .operation{
   font-size: var(--title-font-size);
   font-weight: 500;
   margin-bottom: 20px;
